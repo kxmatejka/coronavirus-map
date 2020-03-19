@@ -6,13 +6,13 @@ const Container = styled.div`
   height: 100vh;
 `
 
-const pulsingRed = ({from, to}: {from: string, to: string}) => keyframes`
+const pulsing = ({from, to}: {from: string, to: string}) => keyframes`
   from {fill: ${from};}
   to {fill: ${to};}
 `
 
 const PulsingPath = styled.path<{from: string, to: string}>`
-  animation: ${p => pulsingRed({from: p.from, to: p.to})} 1s linear infinite alternate;
+  animation: ${p => pulsing({from: p.from, to: p.to})} 1s linear infinite alternate;
 `
 
 const PulsingRedPathAggressive = ({...props}) => <PulsingPath from={'#e05a3f'} to={'#e6300b'} {...props}/>
