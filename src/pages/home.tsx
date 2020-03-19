@@ -15,10 +15,10 @@ const PulsingPath = styled.path<{from: string, to: string}>`
   animation: ${p => pulsing({from: p.from, to: p.to})} 1s linear infinite alternate;
 `
 
-const PulsingRedPathAggressive = ({...props}) => <PulsingPath from={'#e05a3f'} to={'#e6300b'} {...props}/>
-const PulsingRedPathDark = ({...props}) => <PulsingPath from={'#db7965'} to={'#e0634b'} {...props}/>
-const PulsingRedPathMedium = ({...props}) => <PulsingPath from={'#cf8576'} to={'#d47a68'} {...props}/>
-const PulsingRedPathLight = ({...props}) => <PulsingPath from={'#e0a89d'} to={'#e39384'} {...props}/>
+const PulsingRedPathAggressive = (props) => <PulsingPath from={'#e05a3f'} to={'#e6300b'} {...props}/>
+const PulsingRedPathDark = (props) => <PulsingPath from={'#db7965'} to={'#e0634b'} {...props}/>
+const PulsingRedPathMedium = (props) => <PulsingPath from={'#cf8576'} to={'#d47a68'} {...props}/>
+const PulsingRedPathLight = (props) => <PulsingPath from={'#e0a89d'} to={'#e39384'} {...props}/>
 
 const Map = () => {
   return (
