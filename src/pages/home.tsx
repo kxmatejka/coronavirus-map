@@ -2,7 +2,7 @@ import React from 'react'
 import styled, {keyframes} from 'styled-components'
 
 const Container = styled.div`
-  background: #333;
+  background: #111;
   height: 100vh;
 `
 
@@ -13,6 +13,8 @@ const pulsing = ({from, to}: {from: string, to: string}) => keyframes`
 
 const PulsingPath = styled.path<{from: string, to: string}>`
   animation: ${p => pulsing({from: p.from, to: p.to})} 1s linear infinite alternate;
+  stroke: #111;
+  stroke-width: 50px;
 `
 
 const PulsingRedPathAggressive = (props) => <PulsingPath from={'#e05a3f'} to={'#e6300b'} {...props}/>
